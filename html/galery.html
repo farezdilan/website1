@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            /* border: 1px transparent; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            padding: 1rem;
+            color: grey;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <a href="/img/galery-foto/Cewek Jilbob SMA.jpg"><img src="/img/galery-foto/Cewek Jilbob SMA.jpg"
+                    alt="Photo 1"></a>
+            <a href="/img/galery-foto/Cewek Seksi Olahraga.jpeg"><img src="/img/galery-foto/Cewek Seksi Olahraga.jpeg"
+                    alt="Photo 2"></a>
+            <a href="/img/galery-foto/hudson-hintze.jpg"><img src="/img/galery-foto/hudson-hintze.jpg"
+                    alt="Photo 3"></a>
+            <a href="/img/galery-foto/garin-chadwick-XNf_s_upjso-unsplash.jpg"><img
+                    src="/img/galery-foto/garin-chadwick-XNf_s_upjso-unsplash.jpg" alt="Photo 4"></a>
+            <a href="/img/galery-foto/igor-starkov-P.jpg"><img src="/img/galery-foto/igor-starkov-P.jpg"
+                    alt="Photo 5"></a>
+            <a href="/img/galery-foto/images1.jpeg"><img src="/img/galery-foto/images1.jpeg" alt="Photo 6"></a>
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</body>
+
+</html>

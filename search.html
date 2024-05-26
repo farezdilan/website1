@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <style>
+        #searchInput {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple Search Engine</h1>
+
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+
+    <ul id="searchResults">
+        <!-- Hasil pencarian akan ditampilkan di sini -->
+    </ul>
+
+    <script>
+        function search() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var items = document.getElementsByTagName('p'); // Ganti 'p' dengan elemen yang ingin Anda cari
+            var searchResults = document.getElementById('searchResults');
+
+            searchResults.innerHTML = ''; // Bersihkan hasil pencarian sebelumnya
+
+            for (var i = 0; i < items.length; i++) {
+                var itemText = items[i].textContent.toLowerCase(); // Mengambil teks dari elemen
+                if (itemText.includes(input)) {
+                    var li = document.createElement('li');
+                    li.textContent = items[i].textContent; // Menambahkan teks ke daftar hasil pencarian
+                    searchResults.appendChild(li);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
