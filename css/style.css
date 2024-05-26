@@ -113,7 +113,7 @@ body {
   }
 }
 /* tablet @media (max-width: 758px) {  */
-@media (max-width: 930px) {
+@media (max-width: 1300px) {
   html {
     font-size: 70%;
   }
