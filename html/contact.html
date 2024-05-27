@@ -4,88 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Kontak Kami</title>
     <style>
-        *,
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* background-color: rgb(46, 69, 185); */
-            color: white;
-            width: 100%;
-            height: auto;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
 
         .container {
-            left: 32%;
-            top: 3rem;
-            position: relative;
-            width: 300px;
-            height: auto;
-            background-color: rgb(255, 245, 245);
-            padding: 50px;
-            font-size: 20px;
-            font-weight: bold;
-            list-style-type: none;
-            color: black;
-            border: 5px solid black;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        a,
-        li {
-            display: block;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            padding: 5px;
-            margin-left: 2rem;
-            font-weight: normal;
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
-        .youtubesaya {
-            background-color: grey;
-
+        textarea {
+            height: 100px;
         }
 
-        .youtubesaya li {
-            font-size: 30px;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            left: -1rem;
-            top: 2rem;
-
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
         }
 
-
-        /* .ul-navbar #id-home {
-    margin-right: 10vh;
-    font-size: 100%;
-  }
-  .sisi-kanan-navbar {
-    margin-left: 10vh;
-  } */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-        <header style="color:black">Contact Us:</header>
-        <div class="containerisi"></div>
-        <li>&#9743; Phone: 08120000000</li>
-        <li>&#9993; Email: yourselfok77@gmail.com</li>
-        <div class="youtubesaya"><a href="https://www.youtube.com/@alfarezdilanchannel" target="_blank"
-                rel="noopener noreferrer">
-                <li>Youtube Saya</li>
-                <img src="/youtube.png" alt="youtube-saya" style="width:200px; position: relative; left:1rem;">
-            </a>
-        </div>
-    </div>
-
+        <h2>Kontak Kami</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Kirim">
+        </form>
     </div>
 </body>
 
