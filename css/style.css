@@ -338,7 +338,7 @@ label #cancel {
   display: flex;
   align-items: center;
   /* background-image: none; */
-  background-image: url("");
+  background-image: url("/img/backgroundbusiness.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
