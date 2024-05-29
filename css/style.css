@@ -338,7 +338,7 @@ label #cancel {
   display: flex;
   align-items: center;
   /* background-image: none; */
-  background-image: url(/img/nice-business-desk-black-background e.jpg);
+  background-image: url(../img/nice-business-desk-black-background e.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
