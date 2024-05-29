@@ -193,8 +193,21 @@ body {
 
 @media (max-width: 450px) {
   html {
+    font-size: 60%;
+  }
+
+}
+
+@media (max-width: 405px) {
+  html {
     font-size: 50%;
   }
+
+  .halaman-kiri #imgteknologi {
+    width: 90%;
+    height: 80%;
+  }
+
 }
 
 /* @media screen and (max-width: 850px) {
@@ -304,7 +317,7 @@ span {
   position: relative;
   margin-top: 5%;
   /* background-color: rgba(255, 156, 134, 0.68); */
-  /* border-style: dashed; */
+  border-style: dashed;
 
 
 
@@ -312,7 +325,7 @@ span {
 
 .halaman-kiri #imgteknologi {
   width: 90%;
-  max-height: 100%;
+  /* height: 80%; */
   margin: 0 5%;
   margin-top: 7%;
   border-radius: 50px;
@@ -336,12 +349,13 @@ span {
   width: 90%;
   font-family: "Poppins", sans-serif;
   text-align: left;
+  word-spacing: 4px;
   /* background-color: rgba(255, 255, 0, 0.233); */
   color: var(--font-terang);
   padding: 0 5%;
+  /* display: flex; */
 
 }
-
 
 /* PERCOBAAN TEST */
 .layer {
