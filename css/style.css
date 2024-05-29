@@ -124,7 +124,7 @@ body {
 /* tablet @media (max-width: 758px) {  */
 @media (max-width: 930px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
 
   .hero .content1 {
@@ -182,7 +182,7 @@ body {
 
 @media (max-width: 800px) {
   html {
-    font-size: 50%;
+    font-size: 65%;
   }
 
   .content-information .halaman-kiri {
@@ -298,6 +298,27 @@ span {
 
 }
 
+.halaman-kiri {
+  width: 49%;
+  height: auto;
+  position: relative;
+  margin-top: 5%;
+  /* background-color: rgba(255, 156, 134, 0.68); */
+  /* border-style: dashed; */
+
+
+
+}
+
+.halaman-kiri #imgteknologi {
+  width: 90%;
+  max-height: 100%;
+  margin: 0 5%;
+  margin-top: 7%;
+  border-radius: 50px;
+  /* background-color: aqua; */
+}
+
 .content-information .halaman-kiri h2 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
@@ -306,7 +327,7 @@ span {
   /* position: relative; */
   /* background-color: yellow; */
   color: var(--font-terang);
-  margin-top: 20%;
+  margin-top: 7%;
 }
 
 .content-information .halaman-kiri p {
@@ -322,26 +343,7 @@ span {
 }
 
 
-.halaman-kiri {
-  width: 49%;
-  height: auto;
-  position: relative;
-  /* background-color: rgba(255, 156, 134, 0.68); */
-  /* border-style: dashed; */
-
-
-}
-
-.halaman-kiri #imgteknologi {
-  width: 90%;
-  max-height: 70%;
-  margin: 0 5%;
-  margin-top: 20%;
-  border-radius: 50px;
-  /* background-color: aqua; */
-}
-
-/* percobaan */
+/* PERCOBAAN TEST */
 .layer {
   display: none;
   position: absolute;
