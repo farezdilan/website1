@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="Eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning</title>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <link rel="stylesheet" href="../css/style-learn.css">
+</head>
+
+<body>
+  <h1>Larning English for Basic</h1>
+  <div class="epartsentence">
+    <h3>English Sentence Parts</h3>
+    <p>would you like... / do you want...
+      <br>apakah kamu ingin....
+    </p>
+    <p>what kind of (bread) do you have today...
+      <br>
+      jenis roti apa yang kamu punyai saat ini...
+    </p>
+    <p>whole wheat
+      <br>
+      gandum utuh
+    </p>
+    <p>do you want me to bag it for you?
+      <br>
+      apakah anda ingin saya mengantonginya untuk anda?
+    </p>
+    <p>would you like me to pack it for you?
+      <br>
+      apakah anda ingin saya mengemasnya untuk anda?
+    </p>
+    <p>Customer: "Hi, how much do your apples cost?"
+      <br>
+      Customer: "Hi, berapa harga apel anda"
+    </p>
+    <p>Vendor: "Ah, our apples are 5.000 rupiah each. Would you like to buy a few?"
+      <br>
+      Vendor: "Ah, apel kita masing-masing 5.000 Rupiah. Apakah kamu ingin membeli beberapa?"
+    </p>
+    <p>Customer: "Yes, I'll take 3. Can I get a bag?"
+      <br>
+      Customer: "Ya, saya ingin ambil 3. Bisakah saya mendapatkan tas belanja "
+    </p>
+    <p>Vendor: "Of course! That'll be 15.000 Rupiah. Would you like to pay with cash or card?"
+      <br>
+      Vendor: "Tentu saja! Itu akan menjadi 15.000 Rupiah. Apakah kamu ingin membayar secara tunai atau kartu "
+    </p>
+    <br>
+    <h3>Conversation About Work Experience</h3>
+    <p>I have previous experience in the IT field, having worked as an IT technical support specialist at Moka Teknologi
+      Indonesia for five years. I also have experience in the retail sector, having worked as a reporting analyst at
+      Integrated Retail for one year. Additionally, I have worked as an IT technical support specialist at Raptor Pos
+      Indonesia for five years and at Mitra Integrasi Informatika as an IT support specialist for one year.</p>
+    <p>Saya memiliki pengalaman sebelumnya di bidang TI, bekerja sebagai spesialis dukungan teknis TI di Moka Teknologi
+      Indonesia selama lima tahun. Saya juga memiliki pengalaman di sektor ritel, pernah bekerja sebagai analis
+      pelaporan di
+      Integrated Retail selama satu tahun. Selain itu, saya juga pernah bekerja sebagai spesialis dukungan teknis TI di
+      Raptor
+      Pos Indonesia selama lima tahun dan di Mitra Integrasi Informatika sebagai spesialis dukungan TI selama satu
+      tahun.
+    </p>
+  </div>
+  <div class="writespeaklisten"><textarea id="inputText" rows="10" cols="50">Enter text here</textarea><br><br>
+    <button id="listen" onclick="startListening()">Start Listening</button>
+    <button id="write" onclick="speakText()">Play Text as Speech</button>
+  </div>
+  <script>
+    function speakText() {
+      var text = document.getElementById("inputText").value;
+      responsiveVoice.speak(text);
+    }
+    function startListening() {
+      const outputTextarea = document.getElementById('inputText');
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+
+      recognition.lang = 'en-US'; // Set language to English (you can change this as needed)
+
+      recognition.onstart = function () {
+        outputTextarea.value = '';
+        console.log('Speech recognition started...');
+      };
+
+      recognition.onresult = function (event) {
+        const transcript = event.results[0][0].transcript;
+        outputTextarea.value = transcript;
+      };
+
+      recognition.onerror = function (event) {
+        console.error('Speech recognition error:', event.error);
+      };
+
+      recognition.onend = function () {
+        console.log('Speech recognition ended.');
+      };
+
+      recognition.start();
+    }
+
+  </script>
+</body>
+
+</html>
