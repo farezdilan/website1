@@ -10,6 +10,13 @@
 </head>
 
 <body>
+  <a href="../index.html" style="text-decoration: none; color:red">&#706; Back to Home</a>
+  <!-- <button onclick="goBack()">Kembali ke Halaman Sebelumnya</button> -->
+
+  <div class="writespeaklisten"><textarea id="inputText" rows="5" cols="120" placeholder="Enter text here"></textarea>
+    <button id="listen" onclick="startListening()">Start Listening</button>
+    <button id="write" onclick="speakText()">Play Text as Speech</button>
+  </div>
   <h1>Learning English for Basic</h1>
   <div class="epartsentence">
     <h3>English Sentence Parts</h3>
@@ -50,22 +57,22 @@
     </p>
     <br>
     <h3>Conversation About Work Experience</h3>
-    <p>I have previous experience in the IT field, having worked as an IT technical support specialist at Moka Teknologi
+    <p>I have previous experience in the IT field, having worked as an IT technical support specialist at Moka
+      Teknologi
       Indonesia for five years. I also have experience in the retail sector, having worked as a reporting analyst at
-      Integrated Retail for one year. Additionally, I have worked as an IT technical support specialist at Raptor Pos
+      Integrated Retail for one year. Additionally, I have worked as an IT technical support specialist at Raptor
+      Pos
       Indonesia for five years and at Mitra Integrasi Informatika as an IT support specialist for one year.</p>
-    <p>Saya memiliki pengalaman sebelumnya di bidang TI, bekerja sebagai spesialis dukungan teknis TI di Moka Teknologi
+    <p>Saya memiliki pengalaman sebelumnya di bidang TI, bekerja sebagai spesialis dukungan teknis TI di Moka
+      Teknologi
       Indonesia selama lima tahun. Saya juga memiliki pengalaman di sektor ritel, pernah bekerja sebagai analis
       pelaporan di
-      Integrated Retail selama satu tahun. Selain itu, saya juga pernah bekerja sebagai spesialis dukungan teknis TI di
+      Integrated Retail selama satu tahun. Selain itu, saya juga pernah bekerja sebagai spesialis dukungan teknis TI
+      di
       Raptor
       Pos Indonesia selama lima tahun dan di Mitra Integrasi Informatika sebagai spesialis dukungan TI selama satu
       tahun.
     </p>
-  </div>
-  <div class="writespeaklisten"><textarea id="inputText" rows="10" cols="50">Enter text here</textarea><br><br>
-    <button id="listen" onclick="startListening()">Start Listening</button>
-    <button id="write" onclick="speakText()">Play Text as Speech</button>
   </div>
   <script>
     function speakText() {
@@ -99,6 +106,9 @@
 
       recognition.start();
     }
+    // function goBack() {
+    //   window.close();
+    // }
 
   </script>
 </body>
